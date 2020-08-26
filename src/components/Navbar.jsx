@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   state = {};
@@ -6,9 +7,9 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-dark bg-primary">
         <div className="container-fluid text-center">
-          <a className="navbar-brand mx-auto" href="#">
+          <Link className="navbar-brand mx-auto" to="/">
             Super Hero
-          </a>
+          </Link>
         </div>
       </nav>
     );
